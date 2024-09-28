@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Income Expense Tracker</h1>
+    <div>
+        <h2 class="income">Total Income: <span id="income">$0.00</span></h2>
+        <h2 class="balance">Total Balance: <span id="balance">$0.00</span></h2>
+        <h2 class="expense">Total Expense: <span id="expense">$0.00</span></h2>
+    </div>
+    <form onsubmit="onformsubmit()">
+        <div>
+        <label>Description</label>
+        <input type="text" name="product code" id="product code" placeholder="Enter the description"/>
+        </div>
+       
+        <div>
+            
+    <label for="income">Enter your income:</label>
+    <input type="number" id="income" placeholder=" Income" required>
+    
+    <label for="savingsRate">Enter your Savings</label>
+    <input type="number" id="savingsRate" placeholder="Expense" required>
+     </div>
+    
+
+        <div class="A">
+            <label><input type="radio" name="filter" value="all" checked> All</label>
+            <label><input type="radio" name="filter" value="income"> Income</label>
+            <label><input type="radio" name="filter" value="expense"> Expense</label>
+        </div>
+        
+        <button id="calculateBtn">Add Transaction</button>
+
+        <div class="results">
+            <h2>Your Monthly Savings: <span id="savingsResult">$0.00</span></h2>
+            
+        </div>
+        <div></div>
+            <input type="submit" value="submit"/>
+            <input type="reset" value="reset" />
+        </div>
+        <table class="list" id="storeList">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>income</th>
+                    <th>savingsRate</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+        </table>
+        
+
+       
+      
+       
+      
+        </form>
+        
+</body>
+<script src="script.js"></script>
+</html>
